@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="index.js"></script>
+    <!-- <p id="demo"></p> -->
+     <!-- <p>Press a button!</p> -->
+     <button id="btn"></button>
+     <script>
+        // confirm("Press a button")
+        // document.getElementById("btn").innerHTML = "You pressed okay"
+
+
+        // Accessing the window object
+console.log(window); // logs the window object
+
+// Accessing global variables
+var myVar = 'Hello, world!';
+console.log(window.myVar); // logs 'Hello, world!'
+
+// Opening a new window
+window.open('https://www.example.com', '_blank');
+
+// Changing the location of the current window
+window.location.href = 'https://www.example.com';
+
+// Setting a timeout
+window.setTimeout(function() {
+    alert('Hello, after 2 seconds!');
+}, 2000);
+
+     </script>
+</body>
+</html>
