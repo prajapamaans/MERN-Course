@@ -74,6 +74,45 @@ let n = [1,4,6,"string",87,56,34]
 
 //array
 let arr = [76,56,34,98,67]
-console.log(arr[4])
+let arr1 = [26,66,24,58,97]
+num3 = [17, 18, 19];
+// console.log(arr[4])
 arr[4] = 65
-console.log(arr)
+// console.log(arr)
+//console.log(arr.toString()) // convert into string
+// console.log(arr.join(":")) // join with (,)(-)(:)
+// console.log(arr.pop()) // update the original array and returns the popped value
+// console.log(arr.push(87)) // adds a new element
+// console.log(arr)
+// console.log(arr.shift()) // removes first element and returns it
+// let deleted = delete arr[2];
+// console.log(deleted)
+// console.log(arr)
+// console.log(arr.concat(arr1,num3))
+// console.log(arr.sort())
+// console.log(numbers.splice(2,0,11,19))
+// console.log(numbers)
+// const numbers = [1,2,3,4,5,6,8]
+// console.log(numbers.slice(2))
+// console.log(numbers)
+// console.log(arr.reverse())
+// numbers.forEach((element) =>{
+//     console.log(element*element)
+// })
+// let  a = arr.map((value)=>{
+//     console.log(value)
+//     return value +1
+// })
+// console.log(a)
+
+
+
+let arr4 = [2,6,98,54,34]
+let a2 = arr4.filter((a)=>{
+    return a<8
+})
+console.log(a2)
+let a3 = arr4.reduce((h1,h2)=>{
+    return h1+h2
+})
+console.log(a3)
