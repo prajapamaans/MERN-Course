@@ -1,0 +1,17 @@
+// let a = first.getAttribute("class")
+// console.log(a)
+// console.log(first.hasAttribute("class"))
+// console.log(first.hasAttribute("style"))
+// first.setAttribute("hidden","true")
+
+let num = 45
+let string1 = String(num)
+console.log(string1)
+console.log(typeof(string1))
+const gameName = new String('Mansi')
+console.log(gameName)
+console.log(gameName.charAt(4))
+console.log(gameName.length)
+console.log(gameName.toLocaleUpperCase())
+console.log(gameName[0])
+console.log(gameName[1]) 
