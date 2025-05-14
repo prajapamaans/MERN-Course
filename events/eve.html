@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141;color:aliceblue">
+    <p id="obj"></p>
+    <h2> Amazing Images</h2>
+    <div>
+        <ul id="images">
+
+            <li><img src="img3.jpg" width = "230px"  id = "3" height = "210px" alt=""></li>
+            <li><img src="img1.jpg" width = "230px" id="2" height = "210px" alt=""></li>
+            <li><img src="img5.jpg" width = "230px"  id = "4" height = "210px" alt=""></li>
+            <!-- <li><img src="img6.jpg" width = "200px"  id = "5" height = "200px" alt=""></li> -->
+        </ul>
+        <!-- <li><img src="img2.jpg" width = "240px"  id = "2" height = "200px" alt=""></li> -->
+    </div>
+
+</body>
+<script>
+
+    // document.getElementById('img1').addEventListener('click',myFunction(){
+    //     alert("Hello..!! Good evening")
+    // })
+ 
+    // document.getElementById("img1").addEventListener('click',function(e){
+    //     // alert("Hello..!! Good evening")
+    //     console.log(e)  
+    // },false)
+addEventListener
+//type, timestamp, defaultPrevented  
+// target, toElement, srcElement
+//clientX, clientY, screenX, screenY
+//altkey, ctrlkey, shiftkey, keycode
+
+document.getElementById('images').addEventListener('click', function(e){
+    console.log("Clicked inside the ul");
+}, false)
+document.getElementById('3').addEventListener('click', function(e){
+    console.log("image is clicked");
+    e.stopPropagation()
+}, false)
+document.querySelector('#images').addEventListener('click', function(e){
+    // console.log(e.target.parentNode)
+    console.log(e.target.tagName)
+    if(e.taget.tagName === 'IMG'){
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode
+        removeIt.remove();
+    }
+})
+</script>
+<!-- <script src="obj.js"></script> -->
+
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>If you don’t like the road you’re walking,  </h1>
+    <button id="btn">STOP</button>
+</body>
+<script>
+    const sayM = function(){
+        console.log("Mansi")
+    }
+    const ChangeText = function(){
+        document.querySelector('h1').innerHTML = "start paving another one.."
+
+    }
+    const changeMe = setTimeout(ChangeText, 3000)
+    document.querySelector('#btn').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+        
+    })
+</script>
+</html>
