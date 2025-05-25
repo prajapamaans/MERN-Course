@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+</body>
+<script>
+//     function init() {
+//   var name = "Mozilla"; 
+//   function displayName() {
+    
+//     console.log(name);
+//   }
+//   displayName();
+// }
+// init();
+
+// function outer(){
+//     const user = "mansi"
+//     console.log(secret)
+//     function inner(){
+//         let secret = "my123"
+//         console.log("Inner function",user)
+
+//     }
+//     function innerTwo(){
+//         console.log("Innertwo",user)
+//         console.log(secret)
+//     }
+//     inner()
+//     innerTwo()
+// }
+// outer()
+// console.log("Too Outer",user)
+
+
+
+// function makeFunc() {
+//   const name = "Mozilla";
+//   function displayName() {
+//     console.log(name);
+//   }
+//   return displayName;
+// }
+
+// const myFunc = makeFunc();
+// myFunc();
+
+</script>
+<script>
+    function handler(color){
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+    document.getElementById("orange").onclick = handler("orange")
+    document.getElementById("green").onclick = handler("green")
+</script>
+</html>
